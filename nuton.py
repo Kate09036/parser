@@ -8,7 +8,6 @@ def calculate_force(mass, acceleration):
     force = mass * acceleration
     return force
 
-# Example usage:
 mass = float(input("Введите массу тела(в kg): "))
 acceleration = float(input("Введите ускорение (в m/s^2): "))
 
