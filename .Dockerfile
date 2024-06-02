@@ -1,7 +1,11 @@
 # Указываем базовый образ
-FROM python:3
+FROM python:3.12-slim
+
 # Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
 
+# Копируем файлы в рабочую директорию контейнера
+COPY nuton.py .
+
 # Запускаем приложение
-CMD ["python", "/app/nuton.py"]
+CMD ["python", "nuton.py"]
